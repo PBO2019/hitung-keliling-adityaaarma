@@ -2,20 +2,20 @@ package com.company;
 
 public class Main {
 
-    public static void main(String[] args) {
-        Lingkaran Bundar = new Lingkaran ();
-        Bundar.Hitung();
-    }
-}
+   public static void main(String []args){
+       Lingkaran bundar = new Lingkaran();
 
-class Lingkaran {
-    public int radius;
-    public double phi = 3.14;
-    public double jari = 7;
-    public double KelilingLingkaran;
 
-    public void Hitung() {
-        KelilingLingkaran = 2 * phi * jari;
-        System.out.println(KelilingLingkaran);
-    }
+      bundar.setJari(45);
+      bundar.HitungKel();
+
+       System.out.println("Keliling Lingkarannya Adalah : "+bundar.getKeliling());
+
+       BujurSangkar kotak = new BujurSangkar();
+       kotak.setSisi(34);
+       kotak.HitungKel();
+
+       System.out.println("Keliling BujurSangkarnya Adalah : " + kotak.getKeliling());
+   }
+
 }
